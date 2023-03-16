@@ -21,7 +21,7 @@ public class UIControl : MonoBehaviour
     void Update()
     {
         openPauseMenu();
-        Debug.Log(Time.timeScale);
+        //Debug.Log(Time.timeScale);
     }
 
     void openPauseMenu()
