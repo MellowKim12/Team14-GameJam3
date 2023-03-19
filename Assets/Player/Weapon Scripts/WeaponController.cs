@@ -7,8 +7,8 @@ public class WeaponController : MonoBehaviour
     public GameObject Sword;
     public bool CanAttack = true;
     public float AttackCooldown = 1.0f;
-    public AudioClip SwordAttackSound;
     public bool IsAttacking = false;
+    public AudioClip SwordAttackSound;
 
     void Update()
     {
