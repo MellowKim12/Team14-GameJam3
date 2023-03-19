@@ -7,9 +7,12 @@ using UnityEngine.UI;
 
 public class UIControl : MonoBehaviour
 {
-
     private bool canPause = true;
     public GameObject PauseMenu;
+    public GameObject WinPanel;
+    public GameObject LosePanel;
+
+    public GameObject Player;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +36,7 @@ public class UIControl : MonoBehaviour
                 PauseMenu.SetActive(true);
                 canPause = false;
                 Time.timeScale = 0;
+                AudioListener.volume = 0;
             }
             else
             {
@@ -40,6 +44,21 @@ public class UIControl : MonoBehaviour
                 canPause = true;
                 Time.timeScale = 1;
             }
+        }
+    }
+
+    public void openLosePanel()
+    {
+        if(!Player.activeInHierarchy)
+        {
+            LosePanel.SetActive(true);
+            Time.timeScale = 0;
+            AudioListener.volume = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+            AudioListener.volume = 1;
         }
     }
 
@@ -63,5 +82,5 @@ public class UIControl : MonoBehaviour
         Application.Quit();
     }
 
-}
 
+}           
