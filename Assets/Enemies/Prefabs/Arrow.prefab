@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 336847774642043785}
   - component: {fileID: 226345288183435130}
   - component: {fileID: 6682572854136412839}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoDestroyTime: 5
-  moveSpeed: 2
+  moveSpeed: 10
   damage: 1
   rb: {fileID: 336847774642043785}
 --- !u!136 &6682572854136412839

@@ -75,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
         //jump code below
         if(Input.GetKeyDown(jumpKey) && isGrounded)
         {
+            Debug.Log("Jump Key pressed and is Grouned");
             jump();
         }
 

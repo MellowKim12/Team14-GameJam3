@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8130965709430378241}
   - component: {fileID: 8257036022450333551}
   - component: {fileID: 6998486932220504922}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Attack Radius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,10 +63,10 @@ MonoBehaviour:
   attackDelay: 5
   agent: {fileID: 4029696653845385013}
   bulletPrefab: {fileID: 226345288183435130, guid: 8fce2bd07f2d2214795d56a3aa80e899, type: 3}
-  BulletSpawnOffset: {x: 0, y: 1, z: 1}
+  BulletSpawnOffset: {x: 0, y: 0.5, z: 0.5}
   mask:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 257
   spherecastRadius: 0.1
 --- !u!1 &844837718924846337
 GameObject:
@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 7944485230153372021}
   - component: {fileID: 2213212324592343849}
   - component: {fileID: 6287241487888184496}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: RangedEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

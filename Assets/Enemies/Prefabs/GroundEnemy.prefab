@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8130965709430378241}
   - component: {fileID: 8257036022450333551}
   - component: {fileID: 4012987720366651128}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Attack Radius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 4611419778458024442}
   - component: {fileID: 7944485230153372021}
   - component: {fileID: 2213212324592343849}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: GroundEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

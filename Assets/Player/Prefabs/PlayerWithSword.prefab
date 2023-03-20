@@ -190,7 +190,6 @@ GameObject:
   - component: {fileID: 8228259135104197454}
   - component: {fileID: 8228259135104197451}
   - component: {fileID: 8228259135104197452}
-  - component: {fileID: 8228259135104197453}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -263,20 +262,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8228259135104197453
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8228259135104197455}
-  m_Material: {fileID: 13400000, guid: 5af215076e679444faed3a51a34d9ce1, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8228259135913522048
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,7 +275,9 @@ GameObject:
   - component: {fileID: 8228259135913522062}
   - component: {fileID: 8228259135913522060}
   - component: {fileID: 8228259135913522059}
-  m_Layer: 0
+  - component: {fileID: 8919950670715744407}
+  - component: {fileID: 8405293323159195898}
+  m_Layer: 8
   m_Name: PlayerWithSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,6 +386,33 @@ MonoBehaviour:
   minimumJumpHeight: 1.5
   wallRunGravity: 1
   wallRunJumpForce: 6
+--- !u!136 &8919950670715744407
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228259135913522048}
+  m_Material: {fileID: 13400000, guid: 5af215076e679444faed3a51a34d9ce1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8405293323159195898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228259135913522048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d6b8ea578d1e643a8768c1d74aa598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
 --- !u!1 &8228259136360294151
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,3 +593,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wc: {fileID: 1697689118209187578}
   HitParticle: {fileID: 0}
+  damage: 1
